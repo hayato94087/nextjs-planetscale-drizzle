@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:drop": "drizzle-kit drop --config drizzle.config.ts",
     "db:generate": "pnpm drizzle-kit generate:mysql --config drizzle.config.ts",
     "db:push": "pnpm with-env node -r esbuild-register src/db/migrate.ts",
     "db:seed": "pnpm with-env node -r esbuild-register src/db/seed.ts",
