@@ -9,6 +9,7 @@
     "lint": "next lint",
     "db:generate": "pnpm drizzle-kit generate:mysql --config drizzle.config.ts",
     "db:push": "pnpm with-env node -r esbuild-register src/db/migrate.ts",
+    "db:seed": "pnpm with-env node -r esbuild-register src/db/seed.ts",
     "db:select": "pnpm with-env node -r esbuild-register src/db/select.ts",
     "with-env": "dotenv -e .env --"
   },
